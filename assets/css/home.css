@@ -155,7 +155,9 @@ header{
     background-color: #0056b3;
 }
 
-
+body {
+    cursor: url(../images/icons/cursor.png), auto;
+}
 
 /* Green Living Tips  */
 
@@ -244,4 +246,33 @@ header{
     margin-left: 5px;
     color: #25df0c;
     cursor: pointer;
+}
+
+
+
+/* Mobile Screens */ 
+
+
+@media screen and (max-width: 1060px) {
+    
+
+    .hero, .cardcontent {
+        text-align: center;
+    }
+
+    .card {
+        flex-direction: column;
+    }
+
+    .card .cardimg, .card .cardcontent {
+        width: 100%;
+    }
+
+    .faq .faq-item {
+        flex-direction: column;
+    }
+
+    .faq .faq-item h3, .faq .faq-item p {
+        text-align: center;
+    }
 }
