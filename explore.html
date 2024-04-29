@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environmental Challenges</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/explore.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <h1>GreenSage Hub</h1>
+            <div class="logoimg">
+                <img src="./assets/images/logo.png" alt="logo">
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="header">
+        <h1>Explore Environmental Challenges</h1>
+        <p>Dive into the pressing environmental issues facing our communities today. From air pollution to plastic waste, gain insights into the challenges we must overcome to build a healthier planet.</p>
+    </div>
+    <div class="wrapper">
+        <div class="sidebar">
+            <ul>
+                <li><a href="#" onclick="loadWebPage('https://example.com')">Web Page 1</a></li>
+                <li><a href="#" onclick="loadWebPage('https://example.org')">Web Page 2</a></li>
+                <li><a href="#" onclick="loadWebPage('https://example.net')">Web Page 3</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <iframe id="webPageFrame" class="web-page"></iframe>
+        </div>
+    </div>
+    
+
+    <script>
+        function loadWebPage(url) {
+            document.getElementById('webPageFrame').src = url;
+        }
+    </script>
+
+</body>
+</html>
+</body>
+</html>
