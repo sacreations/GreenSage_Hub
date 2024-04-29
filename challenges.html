@@ -32,19 +32,19 @@
     <div class="wrapper">
         <div class="sidebar">
             
-            <button class="sidebar_button first" onclick="loadWebPage('https://example.com', this)">Climate Change</button>
+            <button class="sidebar_button first" onclick="loadWebPage('./assets/pages/climatechange.html', this)">Climate Change</button>
             <br>
             <hr id="sidebar_hr">
-            <button class="sidebar_button" onclick="loadWebPage('https://www.google.com', this)">Air Pollution</button>
+            <button class="sidebar_button" onclick="loadWebPage('./assets/pages/airpollution.html', this)">Air Pollution</button>
             <br>
             <hr id="sidebar_hr">
-            <button class="sidebar_button" onclick="loadWebPage('https://www.google.com', this)">Water Pollution</button>
+            <button class="sidebar_button" onclick="loadWebPage('./assets/pages/waterpollution.html', this)">Water Pollution</button>
             <br>
             <hr id="sidebar_hr">
-            <button class="sidebar_button" onclick="loadWebPage('https://www.google.com', this)">Land Pollution</button>
+            <button class="sidebar_button" onclick="loadWebPage('./assets/pages/waterpollution.html', this)">Land Pollution</button>
             <br>
             <hr id="sidebar_hr">
-            <button class="sidebar_button" onclick="loadWebPage('https://www.google.com', this)">Pollution</button>
+            <button class="sidebar_button" onclick="loadWebPage('./assets/pages/soundpollution.html', this)">Sound Pollution</button>
         </div>
         <div class="content">
             <iframe id="webPageFrame" class="web-page"></iframe>
@@ -66,7 +66,7 @@
     
         window.onload = function() {
             var firstButton = document.querySelector('.sidebar button');
-            loadWebPage('https://example.com', firstButton);
+            loadWebPage('/assets/pages/climatechange.html', firstButton);
         }
     </script>
 
