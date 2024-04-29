@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environmental Challenges</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/challenges.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <h1>GreenSage Hub</h1>
+            <div class="logoimg">
+                <img src="./assets/images/logo.png" alt="logo">
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="header">
+        <h1>Understanding Environmental Challenges</h1>
+        <p>As responsible inhabitants of our planet, it is imperative to recognize and take action towards the diverse environmental issues that our Earth is currently facing. From the consequences of climate change to the decline in biodiversity, these challenges pose a threat to the balance of ecosystems, the welfare of communities, and the ability of future generations to maintain a sustainable environment.</p>
+    </div>
+    <div class="wrapper">
+        <div class="sidebar">
+            
+            <button class="sidebar_button first" onclick="loadWebPage('https://example.com', this)">Climate Change</button>
+            <br>
+            <hr id="sidebar_hr">
+            <button class="sidebar_button" onclick="loadWebPage('https://www.google.com', this)">Air Pollution</button>
+            <br>
+            <hr id="sidebar_hr">
+            <button class="sidebar_button" onclick="loadWebPage('https://www.google.com', this)">Water Pollution</button>
+            <br>
+            <hr id="sidebar_hr">
+            <button class="sidebar_button" onclick="loadWebPage('https://www.google.com', this)">Land Pollution</button>
+            <br>
+            <hr id="sidebar_hr">
+            <button class="sidebar_button" onclick="loadWebPage('https://www.google.com', this)">Pollution</button>
+        </div>
+        <div class="content">
+            <iframe id="webPageFrame" class="web-page"></iframe>
+        </div>
+    </div>
+    
+
+    <script>
+        function loadWebPage(url, element) {
+            document.getElementById('webPageFrame').src = url;
+    
+            var buttons = document.querySelectorAll('.sidebar button');
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].classList.remove('selected');
+            }
+    
+            element.classList.add('selected');
+        }
+    
+        window.onload = function() {
+            var firstButton = document.querySelector('.sidebar button');
+            loadWebPage('https://example.com', firstButton);
+        }
+    </script>
+
+</body>
+</html>
