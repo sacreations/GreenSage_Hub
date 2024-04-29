@@ -1,9 +1,9 @@
 // FAQ Section
-document.querySelectorAll('.faq-item .icon').forEach(item => {
+document.querySelectorAll('.faq-item').forEach(item => {
     item.addEventListener('click', event => {
-        const answer = event.target.parentNode.nextElementSibling;
-        const icon = event.target;
-        if (answer.style.display === 'none') {
+        const answer = item.querySelector('p');
+        const icon = item.querySelector('.icon');
+        if (answer.style.display === 'none' || answer.style.display === '') {
             answer.style.display = 'block';
             icon.textContent = '[-]';
         } else {
