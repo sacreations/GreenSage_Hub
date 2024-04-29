@@ -162,7 +162,7 @@ header{
 .tips{
     display: block;
     justify-content: space-between;
-    background-image: url(./assets/images/tips.svg);
+    background-image: url(../images/tips.svg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
