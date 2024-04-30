@@ -12,3 +12,11 @@ document.querySelectorAll('.faq-item').forEach(item => {
         }
     });
 });
+
+//  scroll to info section
+
+window.onload = function() {
+    document.getElementById('readMore').addEventListener('click', function() {
+        document.getElementById('info').scrollIntoView({behavior: 'smooth'});
+    });
+}
