@@ -264,24 +264,6 @@ body {
 
 @media screen and (max-width: 1060px) {
     
+/*  */
 
-    .hero, .cardcontent {
-        text-align: center;
-    }
-
-    .card {
-        flex-direction: column;
-    }
-
-    .card .cardimg, .card .cardcontent {
-        width: 100%;
-    }
-
-    .faq .faq-item {
-        flex-direction: column;
-    }
-
-    .faq .faq-item h3, .faq .faq-item p {
-        text-align: center;
-    }
 }
