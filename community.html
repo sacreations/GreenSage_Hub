@@ -62,21 +62,60 @@
     </div>
     <hr id="seperator">
     <div id="app">
-        
-    
         <form @submit.prevent="addComment">
+            <h2>Comments</h2>
+            <p>Please share your thoughts, ideas and suggestions to improve GreenSage Hub.</p>
             <input type="text" v-model="newComment.name" placeholder="Your name" required>
-            <textarea v-model="newComment.comment" placeholder="Your comment" required></textarea>
+            <textarea class="text_area" v-model="newComment.comment" placeholder="Your comment" required></textarea>
             <button type="submit">Submit</button>
         </form>
         <div class="comments">
-            <h2>Comments</h2>
             <div v-for="comment in comments" :key="comment.email" class="comment">
                 <h3>{{ comment.name }}</h3>
                 <p>{{ comment.comment }}</p>
             </div>
         </div>
     </div>
+    <footer>
+        <div class="footer">
+            <div class="footerlogo">
+                <h2>GREENSAGE HUB</h2>
+                <div class="logoimg">
+                    <img src="/assets/images/logo.png" alt="logo">
+                </div>
+            </div>
+            <div class="footercontent">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footercontent">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="challenges.html">Environmental Challenges</a></li>
+                    <li><a href="solutions.html">Eco-Friendly Solutions</a></li>
+                    <li><a href="community.html">Green Community</a></li>
+                    <li><a href="https://www.greenlivingtips.com/">Green Living Tips</a></li>
+                </ul>
+            </div>
+            <div class="footercontent">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="https://ou.ac.lk" target="_blank">OUSL</a></li>
+                    <li><a href="https://www.wikipedia.org" target="_blank">Wikipedia</a></li>
+                    <li><a href="https://github.com/" target="_blank">Github</a></li>
+                    <li><a href="https://www.who.int" target="_blank">WHO</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 GreenSage Hub. All Rights Reserved.</p>
+        </div>
+    </footer>
 
     <script>
 
