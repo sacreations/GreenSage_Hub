@@ -52,7 +52,6 @@ body{
 
 
 .wrapper{
-    background-color: rgba(190, 226, 176, 0.953);
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
@@ -64,27 +63,35 @@ body{
 
 .image{
     width:30%;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(234, 234, 234, 0.842);
+    border-radius: 8px;
 }
 
 .image img{
     width: 100%;
+    max-height:240px ;
     border-radius: 8px;
+    
 }
 
 .content{
-    width: 70%;
+    background-color: rgba(241, 255, 240, 0.393);
+    width: 68%;
+    box-shadow: 0 2px 4px rgba(234, 234, 234, 0.842);
+    padding: 20px;
 }
 
 .content h2{
     margin-bottom: 60px;    
     font-size: 24px;
-    color: #101110;
+    color: #243524;
     font-weight: 700;
 }
 
 .content p{
     font-size: 18px;
-    color: #4f7e5c;
+    color: #29332c;
     margin-top: 10px;
     
 }
