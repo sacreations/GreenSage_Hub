@@ -300,4 +300,44 @@ body {
         flex-direction: column;
     }
 
+    .card {
+        flex: 0 0 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .cardcontent {
+        padding: 10px;
+    }
+
+    .cardcontent h3 {
+        font-size: 18px;
+        }
+
+    .cardcontent p {
+        font-size: 14px;
+    }
+
+    .cardcontent button {
+        font-size: 14px;
+    }
+    .tips {
+        flex-direction: column;
+        height: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .tips h2 {
+        font-size: 2em;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+        text-align: right;
+        font-weight: bolder;
+        color: rgb(188, 159, 159);
+    }
+
+    
+
 }
