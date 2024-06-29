@@ -13,3 +13,7 @@ Welcome to **GreenSage Hub**!
 - **Reduction Tips**: Practical advice and tips on how to reduce pollution in daily life.
 - **Alternative Solutions**: Information on sustainable alternatives to common pollutants.
 - **Contact Page**: A way for users to get in touch for more information or to provide feedback.
+
+## Website
+
+Visit the GreenSage Hub website: [GreenSage Hub](https://sacreations.github.io/GreenSage_Hub/)
